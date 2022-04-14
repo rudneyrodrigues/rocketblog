@@ -1,0 +1,41 @@
+.container {
+  height: 6rem;
+  background: var(--purple-bg);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    a {
+      color: var(--white);
+      font-size: 1.125rem;
+      padding: 0 .125rem;
+
+      transition: color .3s;
+
+      &:hover {
+        color: var(--green);
+      }
+
+      &.active {
+        border-left: 2px solid var(--green);
+        font-weight: bold;
+      }
+    }
+  }
+}
